@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root{
+    /*見出しのフォントサイズ*/
+    --h2-size:5rem;
+
+    /*メインコンテンツ内の見出しのフォントサイズ*/
+    --main-contents-h2-size:3rem;
+}
+
 /*フォント　背景*/
 body {
     font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
@@ -34,7 +42,6 @@ p {
 
 .header {
     position: relative;
-    height: auto;
 }
 
 .header-text {
@@ -50,7 +57,7 @@ p {
 }
 
 .header h2{
-    font-size: 5rem;
+    font-size: var(--h2-size);
     color: #ED7D31;
 }
 
@@ -60,27 +67,25 @@ p {
     padding: 10px;
 }
 
-.header-image img{
-    width: 100%;
-    background-size: cover;
-}
-
-.main-top{
-    height: 100px;
+.header-image{
+    background-image:url(../image/TOP/N745_zamanohimawari_1_TP_V.jpg); /* 画像のURLを指定       */
+    background-size:cover;                 /* 画像のサイズを指定    */
+    background-position: center center;
+    width:100%;                              /* 横幅のサイズを指定    */
+    height:1080px;                            /* 縦幅のサイズを指定    */
 }
 
 .main-contents {
     width: 100%;
     max-width: 1200px;
     margin: 50px auto;
-    padding: 5px;
     background-color:rgba(0,0,0,0);
 }
 
 .main-contents h2 {
-    font-size: 3rem;
+    font-size: var(--main-contents-h2-size);
     color: #ED7D31;
-    margin: 50px;
+    margin: 50px 0 20px 0;
 }
 
 .main-contents p {
@@ -91,6 +96,7 @@ p {
 
 .square-image img{
     margin: 10px;
+    width: 30%;
 }
 
 iframe{
@@ -110,6 +116,8 @@ iframe{
     width: 100%;
     padding-top: 50px;
     padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
     background-color: #F5F3EE;
 }
 
@@ -137,3 +145,27 @@ small{
     color: #333;
 }
 
+/* スマホの場合 */
+@media screen and (max-width:520px) {
+    :root{
+        /*見出しのフォントサイズ*/
+        --h2-size:3rem;
+
+        /*メインコンテンツ内の見出しのフォントサイズ*/
+        --main-contents-h2-size:2.5rem;
+    }
+
+    .header-image{
+        background-image:url(../image/TOP/N745_zamanohimawari_1_TP_V.jpg); /* 画像のURLを指定       */
+        background-size:cover;                 /* 画像のサイズを指定    */
+        background-position: center center;
+        width:100%;                              /* 横幅のサイズを指定    */
+        height:400px;                            /* 縦幅のサイズを指定    */
+    }
+
+    .header-text {
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+}

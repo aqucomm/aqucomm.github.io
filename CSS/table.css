@@ -16,6 +16,7 @@
 .about-company th{
     font-size: 1.2rem;
     width: 15%;
+    min-width: 120px;
 }
 
 .about-company td{
