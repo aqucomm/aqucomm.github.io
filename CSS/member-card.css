@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.member-card {
+    display: flex;
+    padding:20px;
+    width: 100%;
+    height: auto;
+}
+
+.member-card img {
+    margin: 0 20px 0 0;
+    border-radius: 100%;
+}
+
+.member-card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.member-card:nth-child(odd) img {
+    margin: 0 0 0 20px;
+}
+
+.card-text{
+    width:calc(100% - (50% + 20px));
+}
+
+.member-card h2{
+    text-align: left;
+    font-size: 2rem;
+    color: #333;
+}
+
+.member-card p{
+    text-align: left;
+}
+
+/* unrelated css */
+
+.member-card img {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

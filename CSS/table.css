@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.about-company{
+    margin: 5px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.about-company th, td{
+    text-align: left;
+    padding: 20px 10px;
+    border-top: 1px solid #ED7D31;
+    border-bottom: 1px solid #ED7D31;
+}
+
+.about-company th{
+    font-size: 1.2rem;
+    width: 15%;
+}
+
+.about-company td{
+    width: 85%;
+}
+
+.back-color{
+    background-color: rgba(237, 125, 49, 0.2);
+}

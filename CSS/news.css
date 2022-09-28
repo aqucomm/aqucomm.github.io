@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+ul.newsList {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px dotted #999;
+    padding: 10px 0;
+}
+    
+ul.newsList li {
+    display: block;
+    margin: 10px 10px;
+}
+    
+ul.newsList li:nth-child(-n + 3) {
+    flex-basis: 130px;
+}
+
+ul.newsList li:nth-child(3) {
+    flex-basis: auto;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1px 10px;
+    text-align: center;
+    background-color: #ED7D31;
+    border-radius: 5px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.block{
+    display: block;
+}

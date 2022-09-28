@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*フォント　背景*/
+body {
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    color: #333;
+    font-size: 16px;
+
+    background-color: #FFF;
+    background-image: linear-gradient( transparent 95%, rgba(0, 0, 0, 0.06) 50%, rgba(0, 0, 0, .06)), linear-gradient( 90deg, transparent 95%, rgba(0, 0, 0, .06) 50%, rgba(0, 0, 0, .06) );
+    background-size: 16px 16px;
+    background-repeat: repeat;
+    width:100%;
+    height:10vw;
+}
+
+p {
+    line-height: 1.8em;
+}
+
+#wrap {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+.logo {
+    height: 80%;
+    width: auto;
+    margin: 10px;
+}
+
+.header {
+    position: relative;
+    height: auto;
+}
+
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header h2{
+    font-size: 5rem;
+    color: #ED7D31;
+}
+
+.header h2, p{
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+}
+
+.header-image img{
+    width: 100%;
+    background-size: cover;
+}
+
+.main-top{
+    height: 100px;
+}
+
+.main-contents {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 5px;
+    background-color:rgba(0,0,0,0);
+}
+
+.main-contents h2 {
+    font-size: 3rem;
+    color: #ED7D31;
+    margin: 50px;
+}
+
+.main-contents p {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.square-image img{
+    margin: 10px;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+}
+
+/*フッターコンテンツ*/
+.footer-top{
+    height: 200px;
+}
+
+.footer-contents{
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #F5F3EE;
+}
+
+small{
+    display: inline-block;
+    background-color: #F5F3EE;
+}
+
+.footer-nav{
+    text-align: center;
+}
+
+.footer-nav ul{
+    list-style: none;
+    padding-bottom: 50px;
+}
+
+.footer-nav li{
+    display: inline-block;
+    margin: auto 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #333;
+}
+

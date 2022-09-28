@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.btn{
+    margin: 50px auto;
+}
+
+.btn a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 200px;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #ed7c3183;
+    border-radius: 50vh;
+    transition: 0.3s;
+}
+
+.btn a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #ED7D31;
+    border-radius: 50vh;
+    transition: 0.2s;
+}
+
+.btn a:hover::before {
+    top: 0;
+    left: 0;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    background-color: #ED7D31;
+    color: #fdfdfd;
+}

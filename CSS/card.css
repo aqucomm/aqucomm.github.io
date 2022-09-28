@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.card {
+    display: flex;
+    padding:20px;
+    width: 100%;
+    height: auto;
+}
+
+.card img {
+    margin: 0 20px 0 0;
+}
+
+.card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.card:nth-child(even) img {
+    margin: 0 0 0 20px;
+}
+
+.card-text{
+    width:calc(100% - (50% + 20px));
+}
+
+.card h2{
+    text-align: left;
+    font-size: 2rem;
+    color: #333;
+}
+
+.card p{
+    text-align: left;
+}
+
+/* unrelated css */
+
+.card img {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
